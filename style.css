@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+[v-cloak] {
+  display: none !important;
+}
+
+/* .error.form_error {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  bottom: -200px;
+} */
+
+.userForm_details input[type="text"]::placeholder,
+.userForm_details textarea::placeholder {
+  color: gray !important;
+  font-size: 16px !important;
+}
+.userForm_details input[type="text"],
+.userForm_details input[type="email"],
+.userForm_details input[type="tel"],
+.userForm_details input[type="date"],
+.userForm_details textarea, .gender ,select {
+  color: gray !important;
+  font-size: 18px !important;
+  background-color: #f2f2f2;
+}
+
+.personal_details span.input_icon {
+  top: 50%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+}
+
+.personal_details input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  padding-left: 12%;
+}
+
+input:focus,
+.userForm_details textarea:focus {
+  box-shadow: none !important;
+}
+
+p.skillName {
+  padding: 7px 10px;
+  background: lightgoldenrodyellow;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+/* ++++++++++++++++++++++ upload documents *********************** */
+
+.uploadLabel {
+  position: relative;
+  margin: 0 auto auto;
+  height: 40px;
+  width: 40px;
+  /* border: 1px dashed #000; */
+  display: block;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  background: url(http://icons.iconarchive.com/icons/pelfusion/flat-folder/256/Upload-Folder-icon.png)
+    no-repeat center center / cover;
+  cursor: pointer !important;
+}
+.uploadLabel:hover {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer !important;
+}
+#photoLoad_0,
+#photoLoad_1,
+#photoLoad_2,
+#photoLoad_3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer !important;
+  opacity: 0;
+}
+#fileValue_0,
+#fileValue_1,
+#fileValue_2,
+#fileValue_3 {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  display: block;
+  color: #000;
+  cursor: pointer !important;
+}
